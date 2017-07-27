@@ -8,7 +8,13 @@ import GuessList from './guess-list';
 class Game extends React.Component {
     constructor(props) {
         super(props)
-        this.state= {carrots: "apple"}
+        this.state= {
+            attempts: 0,
+            guess: '',
+            form: {
+                
+            }
+        }
     }
 
     render() {
