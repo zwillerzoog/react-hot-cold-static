@@ -11,18 +11,20 @@ class Game extends React.Component {
         this.state= {
             attempts: 0,
             guess: '',
-            form: {
+            form: ''
                 
             }
         }
-    }
+    // addData() {
+    //     Object.assign()
+    // }
 
     render() {
-        console.log(this.state);
+        console.log("GAME STATE", this.state);
     return (
         <div>
             <Header />
-            <GuessSection feedback="Make your guess!" state={this.state}/>
+            <GuessSection feedback="Make your guess!" state={this.state} addData={this.addData}/>
             <GuessCount count={3} />
             <GuessList guesses={[10, 15, 25]} />
         </div>

@@ -31,7 +31,7 @@ export default class GuessSection extends React.Component {
     	});
   	}
   
-    render() {    
+    render(props) {    
 
     return (
         console.log(' the state from guess section ', this.state),
